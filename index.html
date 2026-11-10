@@ -132,6 +132,7 @@ h1 { margin: 0; font-size: clamp(36px, 6vw, 56px); font-weight: 500; line-height
   font-family: var(--mono); font-size: 13px;
   padding: 9px 16px; border-radius: 4px; border: 1px solid var(--ac);
   background: transparent; cursor: pointer; color: inherit;
+  white-space: nowrap;
 }
 .btn.solid { background: var(--ac); color: var(--onac); }
 .btn.solid:hover { opacity: 0.88; }
@@ -276,7 +277,7 @@ html.chat-open #chat-panel { transform: none; visibility: visible; transition: t
 }
 @container page (max-width: 480px) {
   .hero .actions, .contact .actions { width: 100%; }
-  .hero .actions .btn, .contact .actions .btn { flex: 1 1 0; min-height: 44px; }
+  .hero .actions .btn, .contact .actions .btn { flex: 1 1 auto; min-height: 44px; }
   .contact .wrap { align-items: stretch; flex-direction: column; }
   .tags li { font-size: 12px; }
 }
